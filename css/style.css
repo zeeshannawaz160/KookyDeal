@@ -60,7 +60,7 @@ body {
   font-weight: 400;
   top: 0;
   left: 0;
-  transition: .5s all ease-out;
+  transition: .3s all ease-out;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   z-index: 10; }
