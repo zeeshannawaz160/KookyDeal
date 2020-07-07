@@ -87,7 +87,7 @@ body {
       text-transform: uppercase;
       list-style: none;
       transition: .5s all;
-      animation: nav-ani .5s ease-out .3s; }
+      animation: nav-ani .5s ease-out; }
 
 @keyframes nav-ani {
   0% {
@@ -103,61 +103,66 @@ body {
     opacity: 1;
     transform: translateY(0); } }
     .navigation__page--item {
-      padding: 2rem 3rem;
       height: 10rem;
       border-bottom: 1px solid #fff;
-      position: relative; }
+      position: relative;
+      margin-top: 1rem; }
       .navigation__page--item-inner {
         background-color: #fff;
         position: absolute;
-        width: 150%;
-        height: 0;
+        width: 100vh;
+        max-height: max-content;
         top: 10rem;
         overflow: hidden;
-        transform: translateX(-3%);
         transition: .3s all; }
         .navigation__page--item-inner .inner-list {
+          height: 100%;
           list-style: none;
           text-transform: capitalize;
           font-weight: 500;
           color: #000;
           margin: 1rem 2rem 2rem 5rem; }
+          .navigation__page--item-inner .inner-list__item {
+            padding: 1rem; }
       .navigation__page--item-1 {
         width: 100%;
         position: relative;
         transition: 0.3s all; }
         .navigation__page--item-1-add {
           position: absolute;
-          top: 1.5rem;
+          top: 2rem;
           right: 2rem; }
       .navigation__page--item-2 {
         width: 100%;
         position: relative; }
         .navigation__page--item-2-add {
           position: absolute;
-          top: 1.5rem;
+          top: 2rem;
           right: 2rem; }
       .navigation__page--item-3 {
         width: 100%;
         position: relative; }
         .navigation__page--item-3-add {
           position: absolute;
-          top: 1.5rem;
+          top: 2rem;
           right: 2rem; }
       .navigation__page--item-4 {
         width: 100%;
         position: relative; }
         .navigation__page--item-4-add {
           position: absolute;
-          top: 1.5rem;
+          top: 2rem;
           right: 2rem; }
       .navigation__page--item-5 {
         width: 100%;
         position: relative; }
         .navigation__page--item-5-add {
           position: absolute;
-          top: 1.5rem;
+          top: 2rem;
           right: 2rem; }
     .navigation__page--link {
+      position: absolute;
       color: black;
+      top: 2rem;
+      left: 3rem;
       text-decoration: none; }

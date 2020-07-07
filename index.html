@@ -45,37 +45,87 @@
         <div class="navigation__page">
             <span class="navigation__page--btn" id="navigation__page--btn"><i class="material-icons navigation__page--btn-close-btn">close</i></span>
             <nav class="navigation__page--nav">
-              <ul class="navigation__page--list">
-                    
-                    <li class="navigation__page--item navigation__page--item-1">
-                        <span class="navigation__page--link" >all category</span>
+                <ul class="navigation__page--list"> 
+                    <div id="accordion">                   
+                    <li class="navigation__page--item navigation__page--item-1" data-toggle = "collapse" data-target = "#demo-1">
+                        <span class="navigation__page--link" >Top Retailers</span>
                         <span id="add-list-1"><i class="material-icons navigation__page--item-1-add">keyboard_arrow_down</i></span>
 
-                        <div class="navigation__page--item-inner">
+                        <div class="navigation__page--item-inner collapse" id="demo-1" data-parent="#accordion">
                             <ul class="inner-list">
-                                <li class="inner-list__item">- flipkart</li>
-                                <li class="inner-list__item">- amazon</li>
-                                <li class="inner-list__item">- myntra</li>
+                                <li class="inner-list__item">- flipkart.com</li>
+                                <li class="inner-list__item">- amazon.in</li>
+                                <li class="inner-list__item">- myntra.com</li>
+                                <li class="inner-list__item">- ajio.com</li>
+                                <li class="inner-list__item">- snapdeal</li>
+                                <li class="inner-list__item">- paytm</li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navigation__page--item navigation__page--item-2">
-                        <span class="navigation__page--link">popular today</span>
+                    <li class="navigation__page--item navigation__page--item-2" data-toggle = "collapse" data-target = "#demo-2">
+                        <span class="navigation__page--link">Special Zone</span>
                         <span><i class="material-icons navigation__page--item-2-add">keyboard_arrow_down</i></span>
+
+                        <div class="navigation__page--item-inner collapse" id="demo-2" data-parent="#accordion">
+                            <ul class="inner-list">
+                                <li class="inner-list__item">- install and earn rewards</li>
+                                <li class="inner-list__item">- todays deals</li>
+                                <li class="inner-list__item">- highest cashback site</li>
+                                <li class="inner-list__item">- new offers</li>
+                                <li class="inner-list__item">- today's popular</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="navigation__page--item navigation__page--item-3">
-                        <span class="navigation__page--link">popular brands</span>
+                    <li class="navigation__page--item navigation__page--item-3" data-toggle = "collapse" data-target = "#demo-3">
+                        <span class="navigation__page--link">Retailer by Categories</span>
                         <span><i class="material-icons navigation__page--item-3-add">keyboard_arrow_down</i></span>
+                        
+                        <div class="navigation__page--item-inner collapse" id="demo-3" data-parent="#accordion">
+                            <ul class="inner-list">
+                                <li class="inner-list__item">- Fashion</li>
+                                <li class="inner-list__item">- Electronics</li>
+                                <li class="inner-list__item">- Healthcare & Beauty</li>
+                                <li class="inner-list__item">- Food & Grocery</li>
+                                <li class="inner-list__item">- Travels & Hotels</li>
+                                <li class="inner-list__item">- Home & Kitchen</li>
+                                <li class="inner-list__item">- Baby & Kids</li>
+                                <li class="inner-list__item">- Education</li>
+                                <li class="inner-list__item">- Bank & Credit Cards</li>
+                                <li class="inner-list__item">- Hosting & Domain</li>
+
+                            </ul>
+                        </div>
                     </li>
-                    <li class="navigation__page--item navigation__page--item-4">
-                        <span class="navigation__page--link">top selling products</span>
+                    <li class="navigation__page--item navigation__page--item-4" data-toggle = "collapse" data-target = "#demo-4">
+                        <span class="navigation__page--link">All Stores</span>
                         <span><i class="material-icons navigation__page--item-4-add">keyboard_arrow_down</i></span>
+                        
+                        <div class="navigation__page--item-inner collapse" id="demo-4" data-parent="#accordion">
+                            <ul class="inner-list">
+                                <li class="inner-list__item">- Flipkart</li>
+                                <li class="inner-list__item">- amazon</li>
+                                <li class="inner-list__item">- myntra</li>
+                                <li class="inner-list__item">- ajio</li>
+                                <li class="inner-list__item">- paytm mall</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="navigation__page--item navigation__page--item-5">
-                        <span class="navigation__page--link">about us</span>
+                    <li class="navigation__page--item navigation__page--item-5" data-toggle = "collapse" data-target = "#demo-5">
+                        <span class="navigation__page--link">Faq</span>
                         <span><i class="material-icons navigation__page--item-5-add">keyboard_arrow_down</i></span>
+                        
+                        <div class="navigation__page--item-inner collapse" id="demo-5" data-parent="#accordion">
+                            <ul class="inner-list">
+                                <li class="inner-list__item">- how to earn</li>
+                                <li class="inner-list__item">- how to get cash</li>
+                                <li class="inner-list__item">- how its works</li>
+                                <li class="inner-list__item">- payments detail</li>
+                                <li class="inner-list__item">- have any other query?</li>
+                            </ul>
+                        </div>
                     </li>
-              </ul>                      
+                    </div>
+                </ul>                                      
             </nav>                
         </div>
     </section>
