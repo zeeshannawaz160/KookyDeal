@@ -111,7 +111,7 @@ body {
         background-color: #fff;
         position: absolute;
         width: 100vh;
-        max-height: max-content;
+        height: max-content;
         top: 10rem;
         overflow: hidden;
         transition: .3s all; }
