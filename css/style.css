@@ -27,7 +27,7 @@ body {
   font-size: 5rem; }
 
 .header {
-  background-color: #001a33;
+  background-color: #005e80;
   width: 100%;
   height: 10rem;
   padding-top: 1.5rem; }
@@ -78,7 +78,7 @@ body {
       width: 100%;
       height: 10rem;
       color: #fff !important;
-      background-color: #001a33; }
+      background-color: #005e80; }
       .navigation__page--btn-close-btn {
         position: absolute;
         left: 3rem;
