@@ -21,7 +21,8 @@ html {
 body {
   display: contents;
   font-family: 'Lato', sans-serif;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .logo-main {
   font-size: 5rem; }
@@ -69,7 +70,7 @@ body {
     .navigation__page--nav {
       position: absolute;
       left: 0;
-      top: 11rem;
+      top: 10rem;
       text-align: left;
       width: 100%;
       height: 90vh; }
@@ -106,13 +107,16 @@ body {
       height: 10rem;
       border-bottom: 1px solid #fff;
       position: relative;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      width: 100%;
+      position: relative;
+      transition: 0.3s all; }
       .navigation__page--item-inner {
         background-color: #fff;
         position: absolute;
-        width: 100vh;
-        height: max-content;
+        width: 100%;
         top: 10rem;
+        height: 0;
         overflow: hidden;
         transition: .3s all; }
         .navigation__page--item-inner .inner-list {
@@ -124,42 +128,26 @@ body {
           margin: 1rem 2rem 2rem 3rem; }
           .navigation__page--item-inner .inner-list__item {
             padding: 1rem; }
-      .navigation__page--item-1 {
-        width: 100%;
-        position: relative;
-        transition: 0.3s all; }
-        .navigation__page--item-1-add {
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
-      .navigation__page--item-2 {
-        width: 100%;
-        position: relative; }
-        .navigation__page--item-2-add {
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
-      .navigation__page--item-3 {
-        width: 100%;
-        position: relative; }
-        .navigation__page--item-3-add {
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
-      .navigation__page--item-4 {
-        width: 100%;
-        position: relative; }
-        .navigation__page--item-4-add {
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
-      .navigation__page--item-5 {
-        width: 100%;
-        position: relative; }
-        .navigation__page--item-5-add {
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
+      .navigation__page--item-1-add {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
+      .navigation__page--item-2-add {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
+      .navigation__page--item-3-add {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
+      .navigation__page--item-4-add {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
+      .navigation__page--item-5-add {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
     .navigation__page--link {
       position: absolute;
       color: black;
