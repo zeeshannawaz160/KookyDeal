@@ -338,7 +338,7 @@ body {
         text-align: left;
         padding-left: 4rem;
         margin: 2rem;
-        color: rgba(255, 255, 255, 0.7); }
+        color: #fff; }
       .login-signin__popup .sign-in__btn {
         width: 50% !important;
         background-color: #00bbff !important; }
