@@ -276,6 +276,7 @@ body {
     max-width: 100rem;
     height: 100rem;
     font-size: 3rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     background-image: img("../../img/back.png");
     background-size: cover;
     background-position: center;
@@ -319,6 +320,7 @@ body {
       position: absolute;
       background-color: rgba(0, 94, 128, 0.8);
       display: none;
+      
       transition: .2s all; }
       .login-signin__popup .sign-in .keep-input {
         width: 0 !important;
