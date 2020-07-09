@@ -110,6 +110,7 @@ body {
     transform: translateY(0); } }
     .navigation__page--item {
       height: 10rem;
+      font-weight: 600;
       border-bottom: 1px solid #fff;
       position: relative;
       margin-top: 1rem;
