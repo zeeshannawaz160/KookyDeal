@@ -41,7 +41,8 @@
             </div>
         </header>
     </div> 
-    <section class="navigation" id="nav">
+    <div class="navigation-0">
+        <section class="navigation" id="nav">
         <div class="navigation__page">
             <span class="navigation__page--btn" id="navigation__page--btn"><i class="material-icons navigation__page--btn-close-btn">close</i></span>
             <nav class="navigation__page--nav">
@@ -127,6 +128,8 @@
             </nav>                
         </div>
     </section>
+    </div>
+    
     <section class="search">
         <div class="search__page">
             <div class="search__page--bar">
@@ -167,13 +170,72 @@
             </div>       
         </div>
     </section>
-    <section class="login">
-        <div class="login__popup u-make-centre">
-            <span class="login__popup--close-btn"><i class="material-icons">close</i></span>
-            <h1 class="login__popup--heading">Login Page</h1>
-            <p>Under development</p>
-
+    <section class="login-signin">
+        
+        <div class="login-signin__popup u-make-centre">
+            <div class="login-signin__popup-image">
+            <span class="login-signin__popup--close-btn"><i class="material-icons">close</i></span>
+            <div class="login-signin__option">
+                <div class="option-divider-in">
+                    <span><h1 class="sign-in__heading u-make-centre">Sign In</h1></span>
+                </div>
+                <div class="option-divider-up login-signin__active">
+                    <span><h1 class="sign-up__heading u-make-centre">Sign Up</h1></span>
+                </div>               
+            </div>            
+            <div class="sign-in">                 
+                 <div class="group">
+                     <label for="sign-in__username" class="label sign-in__username--label">username</label>
+                     <input type="text" name="sign-in__username" id="sign-in__username" class="field sogn-in__username--input">
+                 </div>
+                 <div class="group">
+                      <label for="sign-in__password" class="label sign-in__password--label">password</label>
+                      <input type="password" name="sign-in__password" id="sign-in__password" class="field sign-in__password--input">
+                 </div>
+                 <div class="group">
+                     <div class="keep">
+                         <input type="checkbox" name="keep-signed" id="keep-signed" class=" keep-input"><i class="material-icons keep-input-btn">check_box</i>
+                         <label for="keep keep-signed" class="label keep-label">Keep me Signed in</label>
+                     </div>                     
+                 </div>
+                 <div class="group">
+                     <input type="button" value="Sign In" class="field sign-in__btn">
+                 </div>
+                 <div class="group">
+                     <span class="forgot-password"><a href="#" class="login-signin__link">Forgot Password?</a></span>
+                 </div>                
+             </div>
+             <div class="sign-up">   
+                 <div class="group">
+                     <label for="label sign-up__fname" class="label sign-up__fname--label">Full Name</label>
+                     <input type="text" name="sign-up__fname" id="sign-up__fname" class="field sign-up__fname--input">
+                 </div>  
+                 <div class="group">
+                     <label for="sign-up__username" class="label sign-up__username--label">username</label>
+                     <input type="text" name="sign-up__username" id="sign-up__username" class="field sign-up__username--input">
+                 </div> 
+                 <div class="group">
+                     <label for="sign-up__password" class="label sign-up__password--label">Password</label>
+                     <input type="password" name="sign-up__password" id="sign-up__password" class="field sign-up__password--input">
+                 </div>  
+                 <div class="group">
+                     <label for="sign-up__r-password" class="label sign-up__r-password--label">Repeat Password</label>
+                     <input type="text" name="sign-up__r-password" id="sign-up__r-password" class="field sign-up__r-password--input">
+                 </div>  
+                 <div class="group">
+                     <label for="sign-up__email" class="label sign-up__email--label">Email Address</label>
+                     <input type="email" name="sign-up__email" id="sign-up__email" class="field sign-up__email--input">
+                 </div>   
+                 <div class="group">
+                     <input type="button" value="Sign Up" class="field sign-up__btn">
+                 </div>  
+                 <div class="group">
+                     <span class="already-member"><a href="#" class="login-signin__link">Already Member?</a></span>
+                 </div>               
+            </div>
         </div>
+        </div>
+
     </section>
     </div>
      

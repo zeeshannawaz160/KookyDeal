@@ -1,14 +1,17 @@
 
-document.getElementById("header__top--btn").onclick = function() {myFunction()};        
-        function myFunction() {
-            document.querySelector('.navigation').style.height = "100vh";
-            document.body.style.backgroundColor = "grey";
-        }
-        document.getElementById("navigation__page--btn").onclick = function() {myFun()};        
-        function myFun() {
-            document.querySelector('.navigation').style.height = "0";
-            document.body.style.backgroundColor = "white";
-        }
+        document.getElementById("header__top--btn").addEventListener('click', () => {
+            document.querySelector('.navigation').style.width = "270px";
+            document.querySelector('.navigation-0').style.width = "100%";
+        }); 
+            //document.querySelector('.home').style.backgroundColor = "rgba(0,0,0,.2)";
+        document.getElementById("navigation__page--btn").addEventListener('click', () =>{
+            document.querySelector('.navigation').style.width = "0";
+            document.querySelector('.navigation-0').style.width = "0";
+        });
+        /*document.querySelector('.navigation-0').addEventListener('click', () => {
+            document.querySelector('.navigation').style.width = '0';
+            document.querySelector('.navigation-0').style.width = "0";
+        });*/
 
         /*document.getElementById("add-list-1").onclick = function() {addList()};
         function addList() {
@@ -77,6 +80,9 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }*/
+
+//NAVIGATION//
+
 
 document.querySelector('.navigation__page--item-1').addEventListener('click', function() {
     var arrow = document.querySelector('.navigation__page--item-1-add');
@@ -174,6 +180,7 @@ document.querySelector('.navigation__page--item-2').addEventListener('click', fu
 
 });*/
 
+//SEARCH//
 document.querySelector('.header__top--search').addEventListener('click', () => {
     document.querySelector('.search').style.height = '100vh';
     document.querySelector('.search__page--input').focus();
@@ -183,9 +190,61 @@ document.querySelector('.search__page--bar-back').addEventListener('click', () =
     document.querySelector('.search').style.height = 0;
 })
 
+
+
+//LOGIN FORM//
 document.querySelector('.header__top--user').addEventListener('click', () => {
-    document.querySelector('.login').style.display = 'block';
+    document.querySelector('.login-signin').style.display = 'block';
+    document.querySelector('.sign-in').style.display = 'block';
+    document.querySelector('.sign-in__heading').style.borderBottom = '2px solid white';
+    document.querySelector('.option-divider-in').classList.remove('login-signin__active');
 });
-document.querySelector('.login__popup--close-btn').addEventListener('click', () => {
-    document.querySelector('.login').style.display = 'none';
+document.querySelector('.login-signin__popup--close-btn').addEventListener('click', () => {
+    document.querySelector('.login-signin').style.display = 'none';
+    document.querySelector('.sign-in').style.display = 'none';
+    document.querySelector('.sign-up').style.display = 'none';
+    document.querySelector('.sign-up__heading').style.borderBottom = 'none';
+    document.querySelector('.option-divider-up').classList.add('login-signin__active');
 });
+
+document.querySelector('.option-divider-in').addEventListener('click', () => {
+    document.querySelector('.sign-up').style.display = 'none';
+    document.querySelector('.sign-in').style.display = 'block';
+});
+document.querySelector('.option-divider-up').addEventListener('click', () => {
+    document.querySelector('.sign-in').style.display = 'none';
+    document.querySelector('.sign-up').style.display = 'block';
+});
+
+document.querySelector('.option-divider-up').addEventListener('click', () => {
+    document.querySelector('.sign-up__heading').style.borderBottom = '2px solid white';
+    document.querySelector('.option-divider-in').classList.add('login-signin__active');
+
+    document.querySelector('.sign-in__heading').style.borderBottom = 'none';
+    document.querySelector('.option-divider-up').classList.remove('login-signin__active');
+
+});
+document.querySelector('.option-divider-in').addEventListener('click', () => {
+    document.querySelector('.sign-in__heading').style.borderBottom = '2px solid white';
+    document.querySelector('.option-divider-in').classList.remove('login-signin__active');
+
+    document.querySelector('.sign-up__heading').style.borderBottom = 'none';
+    document.querySelector('.option-divider-up').classList.add('login-signin__active');
+});
+
+var keep = 0;
+document.querySelector('.keep').addEventListener('click', () => {
+    if(keep%2) {
+        document.querySelector('.keep-input-btn').textContent = 'check_box';
+        document.querySelector('.keep-label').style.color = 'white';
+        keep++;
+    }else {
+        document.querySelector('.keep-input-btn').textContent = 'check_box_outline_blank';
+        document.querySelector('.keep-label').style.color = 'rgba(255,255,255,.7)';
+        keep++;
+    }
+    
+});
+
+
+
