@@ -276,7 +276,7 @@ body {
     max-width: 100rem;
     height: 100rem;
     font-size: 3rem;
-    background-image: url("../../img/back.png");
+    background-image: img("../../img/back.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
