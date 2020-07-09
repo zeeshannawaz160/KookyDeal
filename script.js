@@ -174,5 +174,18 @@ document.querySelector('.navigation__page--item-2').addEventListener('click', fu
 
 });*/
 
+document.querySelector('.header__top--search').addEventListener('click', () => {
+    document.querySelector('.search').style.height = '100vh';
+    document.querySelector('.search__page--input').focus();
+});
 
+document.querySelector('.search__page--bar-back').addEventListener('click', () => {
+    document.querySelector('.search').style.height = 0;
+})
 
+document.querySelector('.header__top--user').addEventListener('click', () => {
+    document.querySelector('.login').style.display = 'block';
+});
+document.querySelector('.login__popup--close-btn').addEventListener('click', () => {
+    document.querySelector('.login').style.display = 'none';
+});

@@ -9,6 +9,11 @@
   transform: translateY(-50%);
   position: absolute; }
 
+.u-make-centre-x {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute; }
+
 * {
   margin: 0;
   padding: 0;
@@ -55,8 +60,8 @@ body {
 .navigation {
   width: 100%;
   height: 0;
-  background-color: #eee;
-  color: black;
+  background-color: #f7f7f7;
+  color: #555;
   position: absolute;
   font-weight: 400;
   top: 0;
@@ -124,7 +129,7 @@ body {
           list-style: none;
           text-transform: capitalize;
           font-weight: 500;
-          color: #000;
+          color: #555;
           margin: 1rem 2rem 2rem 3rem; }
           .navigation__page--item-inner .inner-list__item {
             padding: 1rem; }
@@ -150,7 +155,79 @@ body {
         right: 2rem; }
     .navigation__page--link {
       position: absolute;
-      color: black;
+      color: #333;
       top: 2rem;
       left: 3rem;
       text-decoration: none; }
+
+.search {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: .3s all ease-out; }
+  .search__page {
+    font-size: 3rem;
+    color: #555; }
+    .search__page--trending {
+      font-size: 2.5rem; }
+      .search__page--trending-heading {
+        height: 6rem;
+        width: 80%;
+        position: absolute;
+        background-color: #eee;
+        border-radius: 1rem;
+        text-align: center;
+        top: 12rem; }
+      .search__page--trending h3 {
+        font-size: 3rem;
+        font-weight: 600; }
+      .search__page--trending .trending-list {
+        position: absolute;
+        list-style: none; }
+      .search__page--trending .trending-item {
+        list-style: none;
+        padding-top: 2rem;
+        padding-left: 3rem;
+        height: 15rem;
+        border-bottom: 1px solid #fff; }
+    .search__page--bar {
+      width: 100%;
+      height: 10rem;
+      background-color: #fff;
+      position: relative;
+      margin-bottom: 8rem; }
+      .search__page--bar-back {
+        position: absolute;
+        left: 2rem;
+        top: 2.5rem; }
+      .search__page--bar-search {
+        position: absolute;
+        right: 2rem;
+        top: 2.5rem; }
+    .search__page--input {
+      width: 80%;
+      height: 10rem;
+      outline: none;
+      border: none;
+      position: absolute; }
+
+.login {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+  background-color: rgba(119, 119, 119, 0.5); }
+  .login__popup {
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    font-size: 3rem;
+    text-align: center; }
+    .login__popup--heading {
+      font-size: 5rem; }
