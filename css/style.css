@@ -339,7 +339,7 @@ body {
         color: rgba(255, 255, 255, 0.7); }
       .login-signin__popup .sign-in__btn {
         width: 50% !important;
-        background-color: #00bbff !important; }
+        background-color: #7ed56f !important; }
     .login-signin__popup .sign-up {
       width: 100%;
       height: 90%;
@@ -352,7 +352,7 @@ body {
       .login-signin__popup .sign-up__btn {
         margin-top: 3rem;
         width: 50% !important;
-        background-color: #00bbff !important; }
+        background-color: #7ed56f !important; }
   .login-signin__link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5) !important; }
