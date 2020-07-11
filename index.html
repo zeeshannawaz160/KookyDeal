@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
 
     <!--bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -26,16 +27,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="jumbotron-fluid home">
+    <div class="jumbotron-fluid home" id="home">
     <div>
         <header>
             <div class="header">
                 <div class="header__top">
                     <span class="header__top--bars u-make-centre-y" id="header__top--btn"><i class="material-icons">dehaze</i></span>
-                    <div class="header__top--logo u-make-centre-y"><img src="#" alt=""></div>
+                    <div class="header__top--logo u-make-centre-y"></div>
                     <div class="header__top--name u-make-centre-y">KookyDeal</div>
                     <div class="header__top--search u-make-centre-y"><i class="material-icons">search</i></div>
-                    <div class="header__top--user u-make-centre-y"><i class="material-icons">person</i></div>
+                    <div class="header__top--user u-make-centre-y"><i class="material-icons"><a href="#login-signin__popup" class="profile-link">person</a></i></div>
 
                 </div>
             </div>
@@ -170,11 +171,11 @@
             </div>       
         </div>
     </section>
-    <section class="login-signin">
+    <section class="login-signin" id="login-signin__popup">
         
         <div class="login-signin__popup u-make-centre">
             <div class="login-signin__popup-image">
-            <span class="login-signin__popup--close-btn"><i class="material-icons">close</i></span>
+            <span class="login-signin__popup--close-btn"><i class="material-icons"><a href="#home" class="login-signin__close">close</a></i></span>
             <div class="login-signin__option">
                 <div class="option-divider-in">
                     <span><h1 class="sign-in__heading u-make-centre">Sign In</h1></span>
@@ -236,7 +237,7 @@
         </div>
         </div>
     </section>
-    <div class="slideshow">
+    <section class="slideshow">
         <div class="slideshow__container">
             <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -267,8 +268,86 @@
               </a>
             </div>            
         </div>
-    </div>
-    
+    </section>
+    <section class="topcat__wrp">
+        <div class="topcat__wrp--content">
+            <div class="scroll">
+            <!--<h2 class="headline-wrp">Top categories</h2>-->
+                <div class="topcat__wrp--content-box">
+                    <div class="topcat-group bc1">
+                        <i class="flaticon-clothes topcat-icons u-make-centre"></i>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Fashion</a>
+                    </div>                    
+                </div>
+                <div class="topcat__wrp--content-box">
+                    <div class="topcat-group bc2">
+                        <span><i class="flaticon-iphone topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Mobile phones</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc3">
+                        <span><i class="flaticon-television topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">electronics</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc4">
+                        <span><i class="flaticon-supermarket topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Groceries</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc5">
+                        <span><i class="flaticon-kitchen topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Home Appliances</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc6">
+                        <span><i class="flaticon-rupee topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Mobile recharge</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc7">
+                        <span><i class="flaticon-beauty topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">beauty products</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc8">
+                        <span><i class="flaticon-plane topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">Travels</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc9">
+                        <span><i class="flaticon-food topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">online food</a>
+                    </div>
+                </div>
+                <div class="topcat__wrp--content-box">
+                    <div class="topcat-group bc10">
+                       <span><i class="flaticon-heart topcat-icons u-make-centre"></i></span>
+                       <a href="http://google.com" class="topcat-label u-make-centre-x">Health & care</a>
+                   </div>
+               </div>
+               <div class="topcat__wrp--content-box">
+                <div class="topcat-group bc11">
+                   <span><i class="flaticon-book topcat-icons u-make-centre"></i></span>
+                   <a href="http://google.com" class="topcat-label u-make-centre-x">Education</a>
+               </div>
+               </div>
+                <div class="topcat__wrp--content-box">
+                     <div class="topcat-group bc12">
+                        <span><i class="flaticon-shop topcat-icons u-make-centre"></i></span>
+                        <a href="http://google.com" class="topcat-label u-make-centre-x">All stores</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
      
     <script src="./script.js"></script> 

@@ -193,7 +193,7 @@ document.querySelector('.search__page--bar-back').addEventListener('click', () =
 
 
 //LOGIN FORM//
-document.querySelector('.header__top--user').addEventListener('click', () => {
+/*document.querySelector('.header__top--user').addEventListener('click', () => {
     document.querySelector('.login-signin').style.visibility = 'visible';
     document.querySelector('.login-signin').style.opacity = '1';
     document.querySelector('.login-signin__popup').style.opacity = '1';
@@ -213,7 +213,19 @@ document.querySelector('.login-signin__popup--close-btn').addEventListener('clic
     document.querySelector('.sign-up').style.display = 'none';
     document.querySelector('.sign-up__heading').style.borderBottom = 'none';
     document.querySelector('.option-divider-up').classList.add('login-signin__active');
+});*/
+
+document.querySelector('.profile-link').addEventListener('click', () => {
+    document.querySelector('.sign-in__heading').style.borderBottom = '2px solid #00bbff';
+    document.querySelector('.option-divider-in').classList.remove('login-signin__active');
+    document.querySelector('.sign-up').style.display = 'none';
+    document.querySelector('.sign-in').style.display = 'block';
 });
+document.querySelector('.login-signin__close').addEventListener('click', () => {
+    document.querySelector('.sign-up__heading').style.borderBottom = 'none';
+    document.querySelector('.option-divider-up').classList.add('login-signin__active');
+});
+
 
 document.querySelector('.option-divider-in').addEventListener('click', () => {
     document.querySelector('.sign-up').style.display = 'none';

@@ -27,7 +27,8 @@ body {
   display: contents;
   font-family: 'Lato', sans-serif;
   position: relative;
-  display: block; }
+  display: block;
+  background-color: #f7f7f7; }
 
 .logo-main {
   font-size: 5rem; }
@@ -49,14 +50,23 @@ body {
     .header__top--bars {
       left: 2.5rem; }
     .header__top--logo {
-      left: 0; }
+      width: 8rem;
+      height: 8rem;
+      background-image: url(../img/logo.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 8rem;
+      top: 3.5rem; }
     .header__top--name {
-      left: 10rem;
+      left: 17rem;
       top: 3.5rem; }
     .header__top--search {
       right: 10rem; }
     .header__top--user {
       right: 2.5rem; }
+      .header__top--user .profile-link {
+        color: #fff;
+        text-decoration: none; }
 
 .navigation-0 {
   width: 0;
@@ -65,7 +75,6 @@ body {
   left: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 20;
   transition: .001s all; }
 
 .navigation {
@@ -80,7 +89,7 @@ body {
   transition: .3s all ease-out;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
-  z-index: 21; }
+  z-index: 10; }
   .navigation__page {
     font-size: 3rem; }
     .navigation__page--nav {
@@ -178,6 +187,70 @@ body {
       left: 3rem;
       text-decoration: none; }
 
+.topcat__wrp {
+  width: 100%;
+  margin: 2rem 0;
+  height: 20rem; }
+  .topcat__wrp--content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #fff;
+    float: left; }
+    .topcat__wrp--content-box {
+      width: 15rem;
+      height: 15rem;
+      margin: 2rem;
+      display: inline-block;
+      position: relative;
+      margin-bottom: 5rem; }
+      .topcat__wrp--content-box .topcat-group {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        font-size: 3rem;
+        display: block !important;
+        border-radius: 50%; }
+        .topcat__wrp--content-box .topcat-group .topcat-icons {
+          color: #555;
+          padding-bottom: 2rem; }
+        .topcat__wrp--content-box .topcat-group .topcat-label {
+          color: #777;
+          font-size: 2rem;
+          background-color: #fff;
+          padding: .5rem 2rem;
+          top: 12rem;
+          text-decoration: none;
+          text-transform: uppercase; }
+      .topcat__wrp--content-box .bc1 {
+        background-color: rgba(0, 42, 255, 0.204); }
+      .topcat__wrp--content-box .bc2 {
+        background-color: rgba(255, 0, 0, 0.204); }
+      .topcat__wrp--content-box .bc3 {
+        background-color: rgba(255, 238, 0, 0.204); }
+      .topcat__wrp--content-box .bc4 {
+        background-color: rgba(0, 255, 123, 0.204); }
+      .topcat__wrp--content-box .bc5 {
+        background-color: rgba(238, 0, 255, 0.204); }
+      .topcat__wrp--content-box .bc6 {
+        background-color: rgba(0, 128, 255, 0.204); }
+      .topcat__wrp--content-box .bc7 {
+        background-color: rgba(255, 217, 0, 0.204); }
+      .topcat__wrp--content-box .bc8 {
+        background-color: rgba(255, 0, 0, 0.204); }
+      .topcat__wrp--content-box .bc9 {
+        background-color: rgba(149, 255, 0, 0.204); }
+      .topcat__wrp--content-box .bc10 {
+        background-color: rgba(255, 166, 0, 0.204); }
+      .topcat__wrp--content-box .bc11 {
+        background-color: rgba(195, 0, 255, 0.204); }
+      .topcat__wrp--content-box .bc12 {
+        background-color: rgba(255, 0, 221, 0.204); }
+
+.scroll {
+  overflow-x: scroll; }
+
 .search {
   background-color: #f7f7f7;
   width: 100%;
@@ -248,18 +321,7 @@ body {
   z-index: 20;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
-  /*
-    &:target {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    &:target &__popup {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-*/ }
+  transition: all .3s; }
   .login-signin__option {
     position: absolute;
     height: 10%;
@@ -299,6 +361,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s; }
@@ -338,8 +401,7 @@ body {
       top: 10rem;
       left: 0;
       position: absolute;
-      background-color: rgba(0, 94, 128, 0.8);
-      display: none; }
+      background-color: rgba(0, 94, 128, 0.8); }
       .login-signin__popup .sign-in .keep-input {
         width: 0 !important;
         float: left;
@@ -366,12 +428,87 @@ body {
       top: 10rem;
       left: 0;
       position: absolute;
-      background-color: rgba(0, 94, 128, 0.8);
-      display: none; }
+      background-color: rgba(0, 94, 128, 0.8); }
       .login-signin__popup .sign-up__btn {
         margin-top: 3rem;
         width: 50% !important;
         background-color: #00bbff !important; }
+  .login-signin:target {
+    opacity: 1;
+    visibility: visible; }
+  .login-signin:target .login-signin__popup {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .login-signin__link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5) !important; }
+  .login-signin__close {
+    color: rgba(255, 255, 255, 0.5); }
+    .login-signin__close:hover, .login-signin__close:active {
+      color: #fff; }
+
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 11/07/2020 14:26
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff2") format("woff2"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-clothes:before {
+  content: "\f100"; }
+
+.flaticon-shop:before {
+  content: "\f101"; }
+
+.flaticon-iphone:before {
+  content: "\f102"; }
+
+.flaticon-food:before {
+  content: "\f103"; }
+
+.flaticon-book:before {
+  content: "\f104"; }
+
+.flaticon-plane:before {
+  content: "\f105"; }
+
+.flaticon-heart:before {
+  content: "\f106"; }
+
+.flaticon-supermarket:before {
+  content: "\f107"; }
+
+.flaticon-beauty:before {
+  content: "\f108"; }
+
+.flaticon-rupee:before {
+  content: "\f109"; }
+
+.flaticon-television:before {
+  content: "\f10a"; }
+
+.flaticon-kitchen:before {
+  content: "\f10b"; }
