@@ -33,6 +33,13 @@ body {
 .logo-main {
   font-size: 5rem; }
 
+.heading__style {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #555;
+  margin: 1rem; }
+
 .header {
   background-color: #005e80;
   width: 100%;
@@ -68,7 +75,8 @@ body {
       right: 2.5rem; }
       .header__top--user .profile-link {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        outline: none; }
 
 .navigation-0 {
   width: 0;
@@ -190,6 +198,10 @@ body {
       left: 3rem;
       text-decoration: none; }
 
+.slideshow {
+  margin-top: 2rem;
+  background-color: #fff; }
+
 .topcat__wrp {
   width: 100%;
   margin: 2rem 0;
@@ -253,6 +265,30 @@ body {
 
 .scroll {
   overflow-x: scroll; }
+
+.main-wrp {
+  width: 100%;
+  height: 33rem;
+  margin-bottom: 1rem; }
+  .main-wrp__content {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left; }
+    .main-wrp__content--box {
+      width: 28rem;
+      height: 25rem;
+      margin: 2rem 1.25rem;
+      background-color: #fff;
+      margin-bottom: 5rem;
+      display: inline-block; }
+
+.footer {
+  width: 100%;
+  height: 40rem;
+  background-color: #777;
+  margin-top: 3rem; }
 
 .search {
   background-color: #f7f7f7;
