@@ -271,7 +271,7 @@ document.querySelector('.keep').addEventListener('click', () => {
 document.querySelector('.header__top--notification').addEventListener('click', () => {
     document.querySelector('.notification').style.height = '100vh';
 });
-document.querySelector('.notification__close').addEventListener('click', () => {
+document.querySelector('.notification__page--arrow').addEventListener('click', () => {
     document.querySelector('.notification').style.height = '0';
 });
 
