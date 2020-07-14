@@ -267,3 +267,13 @@ document.querySelector('.keep').addEventListener('click', () => {
 
 
 
+//notification
+document.querySelector('.header__top--notification').addEventListener('click', () => {
+    document.querySelector('.notification').style.height = '100vh';
+});
+document.querySelector('.notification__close').addEventListener('click', () => {
+    document.querySelector('.notification').style.height = '0';
+});
+
+
+
