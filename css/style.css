@@ -52,10 +52,10 @@ body {
     .header__top--logo {
       width: 8rem;
       height: 8rem;
-      background-image: url(../img/logo.jpeg);
+      background-image: url(../img/logo4.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      left: 8rem;
+      left: 9rem;
       top: 3.5rem; }
     .header__top--name {
       left: 17rem;
