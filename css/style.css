@@ -55,19 +55,20 @@ body {
     position: relative;
     display: inline-flex;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    /*&--logo {
+            width: 8rem;
+            height: 8rem;
+            background-image: url(../img/favicon_3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 8rem;
+            top: 3.5rem;
+        }*/ }
     .header__top--bars {
       left: 2.5rem; }
-    .header__top--logo {
-      width: 8rem;
-      height: 8rem;
-      background-image: url(../img/logo5.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      left: 8rem;
-      top: 3.5rem; }
     .header__top--name {
-      left: 17rem;
+      left: 9rem;
       top: 3.5rem; }
     .header__top--search {
       right: 17rem; }
@@ -245,29 +246,29 @@ body {
           text-decoration: none;
           text-transform: uppercase; }
       .topcat__wrp--content-box .bc1 {
-        background-color: rgba(0, 42, 255, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc2 {
-        background-color: rgba(255, 0, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc3 {
-        background-color: rgba(255, 238, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc4 {
-        background-color: rgba(0, 255, 123, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc5 {
-        background-color: rgba(238, 0, 255, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc6 {
-        background-color: rgba(0, 128, 255, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc7 {
-        background-color: rgba(255, 217, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc8 {
-        background-color: rgba(255, 0, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc9 {
-        background-color: rgba(149, 255, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc10 {
-        background-color: rgba(255, 166, 0, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc11 {
-        background-color: rgba(195, 0, 255, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
       .topcat__wrp--content-box .bc12 {
-        background-color: rgba(255, 0, 221, 0.204); }
+        background-color: rgba(0, 94, 128, 0.1); }
 
 .scroll {
   overflow-x: scroll; }
@@ -305,7 +306,7 @@ body {
         margin: 0 auto;
         position: relative; }
         .main-wrp__content--box-pic .box-pic {
-          width: 80%; }
+          width: 70%; }
       .main-wrp__content--box-headline {
         width: 90%;
         top: 15rem;
