@@ -55,21 +55,22 @@ body {
     position: relative;
     display: inline-flex;
     text-align: center;
-    cursor: pointer;
-    /*&--logo {
-            width: 8rem;
-            height: 8rem;
-            background-image: url(../img/favicon_3.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            left: 8rem;
-            top: 3.5rem;
-        }*/ }
+    cursor: pointer; }
     .header__top--bars {
       left: 2.5rem; }
-    .header__top--name {
-      left: 9rem;
+    .header__top--logo {
+      width: 8rem;
+      height: 8rem;
+      background-repeat: no-repeat;
+      background-size: cover;
       top: 3.5rem; }
+    .header__top--name {
+      width: 30rem;
+      height: 8rem;
+      left: 9rem;
+      top: 3rem;
+      background-image: url(../../img/name.jpeg);
+      background-size: cover; }
     .header__top--search {
       right: 17rem; }
     .header__top--notification {
