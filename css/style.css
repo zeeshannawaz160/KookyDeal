@@ -28,7 +28,7 @@ body {
   font-family: 'Lato', sans-serif;
   position: relative;
   display: block;
-  background-color: #eee; }
+  background-color: #f7f7f7; }
 
 .logo-main {
   font-size: 5rem; }
@@ -37,8 +37,7 @@ body {
   font-size: 3rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #555;
-  margin: 1rem; }
+  color: #555; }
 
 .header {
   background-color: #005e80;
@@ -204,12 +203,15 @@ body {
 .slideshow {
   margin-top: 2rem;
   background-color: #fff;
-  margin-top: 12rem; }
+  margin-top: 12rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
 
 .topcat__wrp {
   width: 100%;
-  margin: 2rem 0 0 0;
-  height: 20rem; }
+  margin: 2rem 0;
+  height: 20rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem; }
   .topcat__wrp--content {
     width: 100%;
     height: 100%;
@@ -272,16 +274,14 @@ body {
 
 .main-wrp {
   width: 100%;
-  height: 33rem;
-  margin-bottom: 0 1rem;
+  height: 35rem;
   padding: 0 1rem; }
   .main-wrp__content {
     width: 100%;
     height: 100%;
     white-space: nowrap;
     overflow: hidden;
-    float: left;
-    margin-top: 2rem; }
+    float: left; }
     .main-wrp__content--box {
       width: 28rem;
       height: 25rem;
@@ -290,8 +290,9 @@ body {
       margin-bottom: 5rem;
       display: inline-block;
       font-size: 2rem;
-      font-weight: 600;
-      position: relative; }
+      position: relative;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem; }
       .main-wrp__content--box-layer {
         width: 100%;
         height: 100%;
@@ -300,21 +301,77 @@ body {
         position: absolute; }
       .main-wrp__content--box-pic {
         width: 100%;
-        height: 15rem; }
+        height: 15rem;
+        margin: 0 auto;
+        position: relative; }
+        .main-wrp__content--box-pic .box-pic {
+          width: 80%; }
       .main-wrp__content--box-headline {
         width: 90%;
+        top: 15rem;
         height: 5rem;
+        text-transform: capitalize;
         background-color: #EB4D4D;
-        border-radius: 5rem; }
+        border-radius: 5rem;
+        color: #fff; }
       .main-wrp__content--box-terms {
         width: 100%;
-        height: 5rem; }
+        height: 5rem;
+        bottom: 0;
+        position: absolute; }
+        .main-wrp__content--box-terms .terms {
+          text-decoration: none; }
 
 .footer {
   width: 100%;
-  height: 40rem;
-  background-color: #777;
-  margin-top: 10rem; }
+  height: 40rem; }
+  .footer__container {
+    width: 100%;
+    height: 100%;
+    background-color: #555; }
+  .footer__logo {
+    width: 100%;
+    height: 10rem;
+    position: relative; }
+    .footer__logo--img {
+      width: 10rem;
+      height: 10rem; }
+  .footer__content {
+    width: 100%;
+    height: 10rem;
+    text-align: center; }
+    .footer__content--link {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #c1c1c1;
+      margin: 0 1rem; }
+  .footer__share {
+    width: 100%;
+    height: 10rem;
+    display: inline-flex; }
+    .footer__share--title {
+      font-size: 2.5rem;
+      margin: 1.5rem;
+      color: #c1c1c1; }
+    .footer__share--pic {
+      width: 5rem;
+      height: 5rem;
+      margin: 0 1rem; }
+  .footer__license {
+    width: 100%;
+    height: 10rem;
+    font-size: 2.5rem;
+    color: #c1c1c1;
+    display: inline-flex;
+    text-align: center;
+    position: relative; }
+    .footer__license--copyright {
+      position: absolute;
+      width: 100%; }
+    .footer__license .copyright {
+      top: 2rem;
+      font-size: 2.5rem; }
 
 .search {
   background-color: #f7f7f7;
@@ -525,14 +582,15 @@ body {
   .notification__page {
     width: 100%;
     height: 100%;
-    background-color: #eee;
+    background-color: #f7f7f7;
     font-size: 3rem;
     color: #fff; }
     .notification__page--heading {
       width: 100%;
       height: 10rem;
       background-color: #005e80;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 1rem; }
       .notification__page--heading-1 {
         font-size: 3rem;
         font-weight: 400;
@@ -547,8 +605,13 @@ body {
     .notification__page--box {
       width: 100%;
       height: 20rem;
-      background-color: #fff;
-      margin: 2rem 0; }
+      position: relative; }
+      .notification__page--box-content {
+        width: 90%;
+        height: 90%;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
   .notification__end {
     font-size: 2rem;
     color: #777; }
