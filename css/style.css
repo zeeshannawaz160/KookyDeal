@@ -363,14 +363,10 @@ body {
     height: 10rem;
     font-size: 2.5rem;
     color: #c1c1c1;
-    display: inline-flex;
-    text-align: center;
-    position: relative; }
+    text-align: center; }
     .footer__license--copyright {
-      position: absolute;
       width: 100%; }
     .footer__license .copyright {
-      top: 2rem;
       font-size: 2.5rem; }
 
 .search {
