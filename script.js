@@ -1,6 +1,6 @@
 
         document.getElementById("header__top--btn").addEventListener('click', () => {
-            document.querySelector('.navigation').style.width = "300px";
+            document.querySelector('.navigation').style.width = "60rem";
             document.querySelector('.navigation-0').style.width = "100%";
         }); 
             //document.querySelector('.home').style.backgroundColor = "rgba(0,0,0,.2)";

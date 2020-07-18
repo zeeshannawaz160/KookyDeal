@@ -88,7 +88,8 @@ body {
       left: 8rem;
       top: 3.15rem;
       background-image: url(../img/name_2.png);
-      background-size: cover; }
+      background-size: cover;
+      background-repeat: no-repeat; }
     .header__top--search {
       right: 17rem; }
     .header__top--notification {
@@ -227,8 +228,8 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   width: 100%; }
   @media screen and (min-width: 37.5rem) {
-    .slideshow {
-      width: 30%; } }
+    .slideshow .carousel-control-next, .slideshow .carousel-control-prev {
+      bottom: 90%; } }
 
 .topcat__wrp {
   width: 100%;
@@ -252,14 +253,15 @@ body {
       margin-bottom: 5rem; }
       @media screen and (min-width: 37.5rem) {
         .topcat__wrp--content-box {
-          width: 25rem; } }
+          width: 25rem;
+          margin-bottom: 0; } }
       .topcat__wrp--content-box .topcat-group {
         width: 100%;
         height: 100%;
-        position: absolute;
         font-size: 3rem;
         display: block !important;
-        border-radius: 50%; }
+        border-radius: 50%;
+        text-align: center; }
         @media screen and (min-width: 37.5rem) {
           .topcat__wrp--content-box .topcat-group {
             border-radius: 2rem; } }
@@ -267,41 +269,48 @@ body {
           color: #555;
           padding-bottom: 2rem; }
         .topcat__wrp--content-box .topcat-group .topcat-label {
+          height: 4rem;
+          text-align: center !important;
+          text-overflow: clip;
           width: 100%;
           color: #777;
           font-size: 2rem;
           background-color: #fff;
-          padding: .5rem 2rem;
+          padding: .5rem 1rem;
           top: 12rem;
           text-decoration: none;
           text-transform: uppercase; }
       .topcat__wrp--content-box .bc1 {
-        background-color: #eee; }
+        background-color: rgba(0, 42, 255, 0.204); }
       .topcat__wrp--content-box .bc2 {
-        background-color: #eee; }
+        background-color: rgba(255, 0, 0, 0.204); }
       .topcat__wrp--content-box .bc3 {
-        background-color: #eee; }
+        background-color: rgba(255, 238, 0, 0.204); }
       .topcat__wrp--content-box .bc4 {
-        background-color: #eee; }
+        background-color: rgba(0, 255, 123, 0.204); }
       .topcat__wrp--content-box .bc5 {
-        background-color: #eee; }
+        background-color: rgba(238, 0, 255, 0.204); }
       .topcat__wrp--content-box .bc6 {
-        background-color: #eee; }
+        background-color: rgba(255, 0, 0, 0.204); }
       .topcat__wrp--content-box .bc7 {
-        background-color: #eee; }
+        background-color: rgba(255, 217, 0, 0.204); }
       .topcat__wrp--content-box .bc8 {
-        background-color: #eee; }
+        background-color: rgba(0, 128, 255, 0.204); }
       .topcat__wrp--content-box .bc9 {
-        background-color: #eee; }
+        background-color: rgba(149, 255, 0, 0.204); }
       .topcat__wrp--content-box .bc10 {
-        background-color: #eee; }
+        background-color: rgba(255, 166, 0, 0.204); }
       .topcat__wrp--content-box .bc11 {
-        background-color: #eee; }
+        background-color: rgba(195, 0, 255, 0.204); }
       .topcat__wrp--content-box .bc12 {
-        background-color: #eee; }
+        background-color: rgba(255, 0, 221, 0.204); }
 
 .scroll {
   overflow-x: scroll; }
+  @media screen and (min-width: 37.5rem) {
+    .scroll {
+      overflow-y: hidden;
+      overflow-x: scroll; } }
 
 .main-wrp {
   width: 100%;
@@ -326,7 +335,11 @@ body {
       border-radius: 1rem; }
       @media screen and (min-width: 37.5rem) {
         .main-wrp__content--box {
-          width: 30rem; } }
+          width: 30rem;
+          margin-bottom: 0; }
+          .main-wrp__content--box::-webkit-scrollbar-button {
+            width: 5rem;
+            height: 5rem; } }
       .main-wrp__content--box-layer {
         width: 100%;
         height: 100%;
@@ -345,7 +358,7 @@ body {
         top: 15rem;
         height: 5rem;
         text-transform: capitalize;
-        background-color: #EB4D4D;
+        background-color: #005e80;
         border-radius: 5rem;
         color: #fff; }
       .main-wrp__content--box-terms {
